@@ -45,7 +45,7 @@ nest-cli.json---nest脚手架配置文件(配置百度)
 
 package.json---相信玩过webpack或者npm的人都知道这个文件作用了
 
-tsconfig.build.json---打包的时候对ts的配置，不打包 ["node_modules", "test", "dist", "**/*spec.ts"]这些内容
+tsconfig.build.json---打包的时候对ts的配置，不打包 node_modules文件夹、test文件夹、dist文件夹以及以.spec.ts结尾的文件
 
 tsconfig.json---本项目中ts的配置文件
 
