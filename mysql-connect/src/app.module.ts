@@ -25,5 +25,5 @@ import { UserModule } from './user/user.module'
   providers: [AppService],
 })
 export class AppModule {
-  constructor(private readonly connection: Connection) { } // 建立连接
+  constructor(private readonly connection: Connection) {} // 建立连接
 }
