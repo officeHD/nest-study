@@ -1,9 +1,9 @@
 import { IsNotIn, MinLength } from 'class-validator';
-export class UserDTO{
+export class UserLoginDTO{
   /* 
-  * 账号名称
+  * 账号
   */
-  @IsNotIn([''],{message: '账号名称不能为空'})
+  @IsNotIn(['',undefined,null],{message: '账号不能为空'})
   username: string;
 
   /* 
