@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+
 // 数据库连接
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Connection } from 'typeorm';
+
 // 子模块加载
 import { UserModule } from './user/user.module'
 
@@ -20,9 +20,7 @@ import { UserModule } from './user/user.module'
       synchronize: true, // 定义数据库表结构与实体类字段同步(这里一旦数据库少了字段就会自动加入,根据需要来使用)
     }),
     UserModule
-  ],
-  controllers: [AppController],
-  providers: [AppService],
+  ]
 })
 export class AppModule {
   constructor(private readonly connection: Connection) {} // 建立连接

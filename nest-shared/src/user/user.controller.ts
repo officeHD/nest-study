@@ -10,7 +10,7 @@ import { UserLoginDTO } from './dto/user.login.dto';
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
-  @Post('login')
+  @Post('test')
   loginIn(@Body() userlogindto: UserLoginDTO) {
     return userlogindto;
   }
