@@ -26,6 +26,6 @@ async function bootstrap() {
   // 全局注册响应拦截器
   app.useGlobalInterceptors(new ResponseInterceptor());
 
-  await app.listen(3002);
+  await app.listen(3001);
 }
 bootstrap();
