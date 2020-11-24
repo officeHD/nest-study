@@ -1,8 +1,8 @@
 {
-  "name": "hello-nest",
+  "name": "nest-study",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "TW",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
