@@ -3,9 +3,9 @@ import {
   Entity,
   PrimaryGeneratedColumn,
   BaseEntity,
-  CreateDateColumn,
 } from 'typeorm';
 
+/* 单表 */
 @Entity()
 export class User extends BaseEntity {
   @PrimaryGeneratedColumn()
@@ -22,7 +22,4 @@ export class User extends BaseEntity {
 
   @Column({ type: 'varchar', name: 'password' })
   password: string;
-
-  @CreateDateColumn({ name: 'create_time' })
-  createTime:any;
 }
